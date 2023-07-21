@@ -2,5 +2,5 @@ x = float(input("Enter the value of x: "))
 y = float(input("Enter the value of y: "))
 z = x/y
 p = z**2
-print(f"{z:.2f}")
-print(p)
+print(f"x divided by y is {z:.2f}")
+print("the results above squared is:", round(p,2))
