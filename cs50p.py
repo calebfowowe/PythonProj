@@ -4,3 +4,5 @@ z = x/y
 p = z**4
 print(f"{z:.2f}")
 print(p)
+print(f"{z:.2f}")
+print(p)
