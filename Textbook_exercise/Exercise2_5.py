@@ -32,7 +32,7 @@ height = eval(input('Enter the height of the triangle:'))
 for i in range (height):
     print('*' * (i+1))
 """
-#Exercise13
+#Exercise14
 height = int(input('Enter the preferred height:'))
 h = int(height/2)
 for i in range (h):
