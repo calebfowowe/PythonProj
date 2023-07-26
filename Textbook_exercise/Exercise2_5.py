@@ -43,3 +43,4 @@ for i in range (h,-1,-1):
     w = h - i
     z = (' '*(w)) + ('*'*((i+i)+1)) + (' '*(w)) 
     print(z)
+    print(w)
