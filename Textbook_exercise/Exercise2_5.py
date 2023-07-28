@@ -54,7 +54,9 @@ print(c//5, "nickels",sep="", end=", ")
 c = c%5
 print (c//1, "pennies",sep="", end=".")
 c = c%1
-"""
+
+
+#Exercise 6 Misc
 sum_1 = 0
 print("The perfect numbers between 1 and 10000, are: ")
 for i in range (2,10001):
@@ -68,3 +70,22 @@ for i in range (2,10001):
         #print(num, j)
     if sum_2 == num:
         print(f"{num:,}")
+
+"""
+#Exercise 7 Misc
+flag = 0
+from math import *
+num = eval(input("Enter a number: "))
+print(f"The divisors of {num:,} are: ")
+for i in range(2,num+1):
+    if num%i == 0:
+        print(f"{i:,}", end=', ')
+        num_2 = sqrt(i)
+        num_3 = i//num_2
+        if num_2%num_3 == 0:
+            flag = 1
+print()
+if flag == 1:
+    print(f"{num:,} is not a squarefree number")
+else:
+    print(f"{num:,} is a squarefree number")
