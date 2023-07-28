@@ -56,8 +56,8 @@ print (c//1, "pennies",sep="", end=".")
 c = c%1
 """
 sum_1 = 0
-print("The perfect numbers between 1 and 100000000, are: ")
-for i in range (2,100000001):
+print("The perfect numbers between 1 and 10000, are: ")
+for i in range (2,10001):
     num = i
     sum_2 = 0
     #print(i)
