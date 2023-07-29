@@ -55,16 +55,30 @@ c = c%5
 print (c//1, "pennies",sep="", end=".")
 c = c%1
 """
-sum_1 = 0
-print("The perfect numbers between 1 and 10000, are: ")
-for i in range (2,10001):
-    num = i
-    sum_2 = 0
+from math import *
+count_nsqr = 0
+count_ncub = 0
+count_nfif = 0
+for i in range (1,1001):
     #print(i)
-    for j in range (1,num):
-        #print(j, end=",")
-        if num%j==0:
-            sum_2 = sum_2 + j
-        #print(num, j)
-    if sum_2 == num:
-        print(f"{num:,}")
+    num_1a = sqrt(i)
+    num_1b = i//num_1a
+    num_1c = i**(1/3)
+    #print('1c', num_1c)
+    num_1d = i//num_1c
+    #print('1d', num_1d)
+    num_1e = i**(1/5)
+    num_1f = i//num_1e
+    if num_1b%num_1a != 0:
+        #print("division_a", num_1a%num_1b)
+        count_nsqr = count_nsqr + 1
+    if round(num_1d%num_1c,4) != 0:
+        #print(i, "division_b", num_1d%num_1c)
+        count_ncub = count_ncub + 1
+    if round(num_1f%num_1e,4) != 0:
+        #print(i, "division_c", num_1f%num_1e)
+        count_nfif = count_nfif + 1
+        
+print(f"There are {count_nsqr:,}non-perfect squares between 1 and 1000", sep='')
+print(f"There are {count_ncub:,}non-perfect cubes between 1 and 1000", sep='')
+print(f"There are {count_nfif:,}non-perfect fifths between 1 and 1000", sep='')
