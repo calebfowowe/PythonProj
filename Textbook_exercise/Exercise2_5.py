@@ -57,17 +57,4 @@ print (c//1, "pennies",sep="", end=".")
 c = c%1
 """
 
-#Exercise 6 Misc
-sum_1 = 0
-print("The perfect numbers between 1 and 10000, are: ")
-for i in range (2,10001):
-"""    num = i
-    sum_2 = 0
-    #print(i)
-    for j in range (1,num):
-        #print(j, end=",")
-        if num%j==0:
-            sum_2 = sum_2 + j
-        #print(num, j)
-    if sum_2 == num:
-        print(f"{num:,}")
+
