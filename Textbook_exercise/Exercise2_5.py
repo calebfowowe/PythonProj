@@ -44,7 +44,6 @@ for i in range (h,-1,-1):
     z = (' '*(w)) + ('*'*((i+i)+1)) + (' '*(w)) 
     print(z)
 
-
 #Exercise 18
 c = eval(input("Enter the amount of change less then 1 dollar that you are to collect, between 0 - 99cents: "))
 print(c//25, "quarters",sep="", end=", ")
@@ -56,5 +55,16 @@ c = c%5
 print (c//1, "pennies",sep="", end=".")
 c = c%1
 """
-
-
+sum_1 = 0
+print("The perfect numbers between 1 and 10000, are: ")
+for i in range (2,10001):
+    num = i
+    sum_2 = 0
+    #print(i)
+    for j in range (1,num):
+        #print(j, end=",")
+        if num%j==0:
+            sum_2 = sum_2 + j
+        #print(num, j)
+    if sum_2 == num:
+        print(f"{num:,}")
