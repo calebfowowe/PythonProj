@@ -43,7 +43,7 @@ for i in range (h,-1,-1):
     w = h - i
     z = (' '*(w)) + ('*'*((i+i)+1)) + (' '*(w)) 
     print(z)
-"""
+
 
 #Exercise 18
 c = eval(input("Enter the amount of change less then 1 dollar that you are to collect, between 0 - 99cents: "))
@@ -55,7 +55,7 @@ print(c//5, "nickels",sep="", end=", ")
 c = c%5
 print (c//1, "pennies",sep="", end=".")
 c = c%1
-
+"""
 
 #Exercise 6 Misc
 sum_1 = 0
